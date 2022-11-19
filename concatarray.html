@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>concatarray</title>
+</head>
+<body>
+<script>
+  let arr1 = [];
+  for (let i = 0; i < 10;i++){
+    let num = +prompt("nhập số mảng a:");
+    arr1[i] = num;
+  }
+  let arr2 = [];
+  for (let i = 0; i < 10;i++){
+    let num = +prompt("nhập số mảng b: ");
+    arr2[i] = num;
+  }
+  let c = arr1.concat(arr2);
+  document.write(c);
+</script>
+</body>
+</html>

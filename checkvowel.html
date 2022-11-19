@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkvowel</title>
+</head>
+<body>
+<script>
+  let str = prompt("nhập chuỗi:");
+  let vowel = "aeiou";
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (vowel.indexOf(str[i]) != -1) count++;
+    result = count;
+  }
+  if(result==0) document.write("không có nguyên âm nào trong chuỗi")
+  else document.write("số lượng nguyên âm là: " + result);
+</script>
+</body>
+</html>

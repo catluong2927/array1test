@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkarray</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10;i++){
+        let num = +prompt("nhập số");
+        arr[i] = num;
+    }
+    let count = 0;
+    for (j=0;j<arr.length;j++){
+        if (arr[j]>=10) count++
+    }
+    document.write(`có ${count} số lớn hơn hoặc bằng 10`);
+</script>
+</body>
+</html>

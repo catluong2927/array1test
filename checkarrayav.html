@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkarrayav</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let result;
+
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập số");
+    }
+    for (j = 1; j < arr.length; j++) {
+        let max = arr[0];
+        if (max < arr[j]) max = arr[j];
+        result = max;
+    }
+    let av = arr.reduce((sum,num,i,arr) => {
+        sum += num;
+        if(i == arr.length-1) return (sum / arr.length)
+        else return sum;
+    });
+    document.write("số lớn nhất là: "+result+" tổng trung bình là "+av);
+</script>
+</body>
+</html>
